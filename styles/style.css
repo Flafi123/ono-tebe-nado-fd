@@ -26,7 +26,7 @@ main{
 .logo-image{
     height: 100%;
 }
-/* Доверстать растояние */
+
 .menu-header-list{
     display: flex;
     gap: 31px;
@@ -88,15 +88,11 @@ main{
 }
 .cover-title{
     text-transform: uppercase;
-    width: 100%;
     font-size: 100px;
     letter-spacing: 30px;
-    line-height: 114.99999999999999px;
-    font-weight: 700;
-    font-size: 100px;
+    line-height: 114.99999999999999px;   
 }
 
-/* Доверстать расстояние между словами с помощью плагина */
 .cover-span{
     display: block;
     padding-bottom: 19.5px;
@@ -110,9 +106,27 @@ main{
 
 .description{
     display: flex;
-    padding: 53px 50px 50px 50px;
+    justify-content: space-between;
+    margin-top: 106px;
+    align-items: center;
+    margin-top: 88px;
 }
-
+.description-text{
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 0%;
+    word-spacing: 20px;
+}
+.description-button{
+    background-color: transparent;
+    border-style: solid;
+    border-color: #fff;
+    border-width: 1px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 22px;
+    padding: 12px 32px 11px 31px;
+}
 .lots{
     margin-top: 180px;
 }
