@@ -19,6 +19,7 @@ main{
 .logo{
     display: flex;
     justify-content: center;
+    width: 148px;
     height: 105px;
 }
 
@@ -28,16 +29,16 @@ main{
 /* Доверстать растояние */
 .menu-header-list{
     display: flex;
-    gap: 29.3px;
+    gap: 31px;
     list-style: circle;
     font-size: 18px;
-    text-underline-offset: 3px;
-    text-underline-position: center;
-    font-style: normal;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1px;
 
 }
 
 .menu-header-link{
+
     text-decoration: underline;
     color: #1e1e1e;
 }
@@ -53,26 +54,27 @@ main{
     width: 240px;
     text-align: left;
     margin-left: auto;
+    justify-self: start;
     right: 0px;
     line-height: 24.3px;
     font-style: normal; 
-    font-size: 18px;;
+    font-size: 18px;
 }
 .address-link{
     text-decoration: underline;
     color: #1e1e1e;
     text-underline-offset: 3px; 
 }
-/* Доверстать изображение через плагин */
 .cover{
     position: relative;
-    background-image: url(../images/titele-image.jpg);
+    background-image: url(../images/cover.jpg);
     min-height: 757px;
     width: 100%;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;    
+    padding: 165px 50px 50px 50px;
 }
 
 .overlay{
@@ -92,12 +94,12 @@ main{
     line-height: 114.99999999999999px;
     font-weight: 700;
     font-size: 100px;
-    padding: 165px 50px 53px 50px;
 }
 
 /* Доверстать расстояние между словами с помощью плагина */
 .cover-span{
     display: block;
+    padding-bottom: 19.5px;
 }
 .center{
     text-align: center;
@@ -115,13 +117,6 @@ main{
     margin-top: 180px;
 }
 
-
-
-.menu-header{
-}
-
-.menu-footer{
-}
 
 .social-networks{
     display: flex;
