@@ -1,1 +1,129 @@
-/* место для вашего кода */
+main{
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+    margin-right: 24px;
+    gap: 60px;
+}
+
+
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: center;
+    padding: 0px 50px 0px 50px;
+    height: 293px;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    height: 105px;
+}
+
+.logo-image{
+    height: 100%;
+}
+/* Доверстать растояние */
+.menu-header-list{
+    display: flex;
+    gap: 29.3px;
+    list-style: circle;
+    font-size: 18px;
+    text-underline-offset: 3px;
+    text-underline-position: center;
+    font-style: normal;
+
+}
+
+.menu-header-link{
+    text-decoration: underline;
+    color: #1e1e1e;
+}
+
+.menu-header-item-active .menu-header-link{
+    text-decoration: none;
+    color: #1e1e1e;
+}
+
+.address{
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    text-align: left;
+    margin-left: auto;
+    right: 0px;
+    line-height: 24.3px;
+    font-style: normal; 
+    font-size: 18px;;
+}
+.address-link{
+    text-decoration: underline;
+    color: #1e1e1e;
+    text-underline-offset: 3px; 
+}
+/* Доверстать изображение через плагин */
+.cover{
+    position: relative;
+    background-image: url(../images/titele-image.jpg);
+    min-height: 757px;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;    
+}
+
+.overlay{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    inset: 0;
+}
+
+.сover-text{
+    position: relative;
+}
+.cover-title{
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 100px;
+    letter-spacing: 30px;
+    line-height: 114.99999999999999px;
+    font-weight: 700;
+    font-size: 100px;
+    padding: 165px 50px 53px 50px;
+}
+
+/* Доверстать расстояние между словами с помощью плагина */
+.cover-span{
+    display: block;
+}
+.center{
+    text-align: center;
+}
+.right{
+    text-align: right;
+}
+
+.description{
+    display: flex;
+    padding: 53px 50px 50px 50px;
+}
+
+.lots{
+    margin-top: 180px;
+}
+
+
+
+.menu-header{
+}
+
+.menu-footer{
+}
+
+.social-networks{
+    display: flex;
+    gap: 48px;
+}
