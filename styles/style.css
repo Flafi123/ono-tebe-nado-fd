@@ -1,3 +1,9 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 120px;   
+
+}
 .header{
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
@@ -34,7 +40,6 @@
 
 .menu-header-item-active .menu-header-link{
     text-decoration: none;
-    color: #1e1e1e;
 }
 
 .address{
@@ -64,6 +69,7 @@
     background-size: cover;
     color: #fff;    
     padding: 165px 50px 50px 50px;
+    margin-bottom: 60px;
 }
 
 .overlay{
@@ -121,7 +127,6 @@
 .lots{
     display: flex;
     flex-direction: column;
-    margin-top: 180px;
     gap: 27px;
     padding: 0px 24px 0px 24px;
     
@@ -200,7 +205,92 @@
     margin-left: 40px;
 }
 
+.about-auction{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 0px 24px 0px 24px;
+    height: 595px;
+}
+
+.black-ellipse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 240px;
+    height: 240px;
+    border-radius: 100%;
+}
+.white-logo{
+    position: relative;
+    height: 114px;
+    width: 148px;
+}
+
+.logo-about{
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    justify-self: center;
+    align-self: center;
+}
+.about-auction-title{
+    text-transform: uppercase;
+    font-size: 40px;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3 ;
+    align-self: center;
+    justify-self: start;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.about-auction-text{
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.about-auction-text{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    line-height: 24px;
+
+}
+
+.footer{
+    display: flex;
+    bottom: 0;
+    margin-top: 180px;
+    height: 180px;
+    padding: 0px 50px 0px 50px;
+}
+
+.address{
+    margin-left: 0px;
+
+    
+}
+
+.menu-footer{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    text-align: center;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1px;
+
+}
+
+.menu-footer-item-active .menu-footer-link{
+    text-decoration: none;
+}
+
 .social-networks{
     display: flex;
     gap: 48px;
+    width: 240px;
 }
