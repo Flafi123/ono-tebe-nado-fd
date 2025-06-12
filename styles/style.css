@@ -28,7 +28,6 @@
 }
 
 .menu-header-link{
-
     text-decoration: underline;
     color: #1e1e1e;
 }
@@ -69,7 +68,7 @@
 
 .overlay{
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     inset: 0;
 }
 
@@ -162,12 +161,16 @@
     font-size: 22px;
     text-transform: uppercase;
     text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 1.5px;
 }
 
 .card-text{
     position: absolute;
     font-size: 20px;
     bottom: 48px;
+    line-height: 120%;
+    padding-right: 40px;
 }
 
 .card-film{
