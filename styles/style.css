@@ -30,7 +30,6 @@
     font-size: 18px;
     text-underline-offset: 4px;
     text-decoration-thickness: 1px;
-
 }
 
 .menu-header-link{
@@ -38,10 +37,14 @@
     color: #1e1e1e;
 }
 
-.menu-header-item-active .menu-header-link{
+.link-active{
     text-decoration: none;
 }
-/*  */
+
+.first-item-menu{
+    list-style: none;
+}
+
 .address{
     display: flex;
     flex-direction: column;
@@ -54,11 +57,13 @@
     font-style: normal; 
     font-size: 18px;
 }
+
 .address-link{
     text-decoration: underline;
     color: #1e1e1e;
     text-underline-offset: 3px; 
 }
+
 .cover{
     position: relative;
     background-image: url(../images/cover.jpg);
@@ -78,10 +83,8 @@
     inset: 0;
 }
 
-.сover-text{
-    position: relative;
-}
 .cover-title{
+    position: relative;
     text-transform: uppercase;
     font-size: 100px;
     letter-spacing: 30px;
@@ -92,7 +95,9 @@
     display: block;
     padding-bottom: 19.5px;
 }
-
+.cover-span-last-letter{
+    letter-spacing: normal 
+}
 .center{
     text-align: center;
 }
@@ -101,17 +106,20 @@
 }
 
 .description{
+    position: relative;
     display: flex;
     justify-content: space-between;
     margin-top: 106px;
     align-items: center;
     margin-top: 88px;
 }
+
 .description-text{
     text-transform: uppercase;
     font-size: 22px;
     word-spacing: 20px;
 }
+
 .description-button{
     background-color: transparent;
     border-style: solid;
@@ -122,7 +130,6 @@
     font-size: 22px;
     padding: 12px 32px 11px 31px;
 }
-
 
 .lots{
     display: flex;
@@ -150,19 +157,29 @@
     display: flex;
     flex-direction: column;
     text-align: left;
+    justify-content: space-between;
     flex-basis: 334px;
     flex-grow: 1;
-    height: 596px;
-    padding: 48px 40px 48px 40px;
-
-    
 }
+.card-image{
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 596px;
+    padding: 48px 40px 48px 40px;
+}
+    
+
 .card-link{
     text-decoration: none;
 }
 
 .card-title{
-    position: relative;
+    z-index: 1;
     font-size: 22px;
     text-transform: uppercase;
     text-decoration: underline;
@@ -171,30 +188,19 @@
 }
 
 .card-text{
-    position: absolute;
+    z-index: 1;
     font-size: 20px;
-    bottom: 48px;
     line-height: 120%;
-    padding-right: 40px;
 }
 
 .card-film{
     background-image: url(../images/card-lot-01.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
 }
 .card-book{
     background-image: url(../images/card-lot-02.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
 }
-.card-image{
+.card-painting{
     background-image: url(../images/card-lot-03.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
 }
 
 .lots-button{
@@ -222,11 +228,13 @@
     height: 240px;
     border-radius: 100%;
 }
+
 .white-logo{
     position: relative;
     height: 114px;
     width: 148px;
 }
+
 
 .logo-about{
     grid-row: 1 / 2;
@@ -234,6 +242,7 @@
     justify-self: center;
     align-self: center;
 }
+
 .about-auction-title{
     text-transform: uppercase;
     font-size: 40px;
@@ -268,10 +277,12 @@
     padding: 0px 50px 0px 50px;
 }
 
-.address{
-    margin-left: 0px;
+.list{
+    list-style: none;
+}
 
-    
+.address{
+    margin-left: 0px; 
 }
 
 .menu-footer{
